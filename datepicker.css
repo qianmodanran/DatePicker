@@ -1,0 +1,88 @@
+.datepicker {
+    position: absolute;
+    z-index: 2 !important;
+    border: 1px solid #999;
+    background: #fff;
+    padding: 1px;
+    font-family: Arial;
+    -ms-text-size-adjust: 100%;
+    font-size: 9px; /* 统一基础字体大小 */
+    zoom: 1;
+    width: 200px;
+}
+
+.datepicker table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+/* 表头保留边框 */
+.datepicker thead th {
+    border: 1px solid #ddd;
+}
+
+/* 表格主体移除边框 */
+.datepicker tbody td {
+    border: 0;
+    padding: 0;
+}
+
+.datepicker th, 
+.datepicker td {
+    text-align: center;
+    font-size: 9px; /* 统一字体大小 */
+    line-height: 14px; /* 调整行高 */
+    padding: 0 2px;
+}
+
+.datepicker th {
+    background: #f0f0f0;
+    font-weight: normal;
+}
+
+.datepicker td {
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.datepicker td:hover {
+    background: #e0e0ff;
+}
+
+.datepicker-header {
+    text-align: center;
+    margin: 2px 0;
+    font-size: 9px; /* 保持与整体一致 */
+}
+
+.datepicker-nav {
+    cursor: pointer;
+    margin: 0 3px;
+    padding: 0 5px;
+    font-size: 9px; /* 导航箭头同步调整 */
+}
+
+.time-section {
+    margin-top: 6px;
+    padding: 2px;
+    border-top: 1px solid #ddd;
+}
+
+.time-select {
+    width: 50px;
+    margin: 0 1px;
+    font-size: 9px; /* 时间选择器同步调整 */
+    height: 18px;
+}
+
+.time-section-hidden .time-section {
+    display: none;
+}
+.selected-day {
+    background-color: #151ce8 !important;
+    color: #fff;
+    font-weight: bold;
+}
+
