@@ -16,12 +16,12 @@ function domReady(callback) {
 		document.addEventListener('DOMContentLoaded', callback, false);
 	}
 }
+//在需要的用的地方调用：
+var input = document.getElementById(ctrlName.id);
+domReady(function () {
+   var picker = new DatePicker(input, { format: format });
+   picker.show();
+});
 ```
-在需要的用的地方调用：
-```
-	var input = document.getElementById(ctrlName.id);
-	domReady(function () {
-		var picker = new DatePicker(input, { format: format });
-		picker.show();
-	});
-```
+
+
